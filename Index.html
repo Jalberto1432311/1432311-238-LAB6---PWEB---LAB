@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <title>Mi Pagina WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="Css/EstiloIndex.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Mi Página Web</h1>
+    </header>
+    <nav>
+        <a href="Pagina1.html">Página 1</a>
+        <a href="Pagina2.html">Página 2</a>
+        <a href="Pagina3.html">Página 3</a>
+    </nav>
+    <section>
+        <h2>¡Bienvenido a mi página!</h2>
+        <img src="Imagenes/fimelogo.jpg" alt="Mi imagen">
+        <p>La Facultad de Ingeniería Mecánica y Eléctrica
+            La Facultad de Ingeniería Mecánica y Eléctrica (FIME), es una Institución educativa de nivel superior y pertenece a la Universidad Autónoma de Nuevo León.
+            
+            Nuestras 11 carreras a nivel Licenciatura, 25 programas de Posgrado y más de 120 cursos de Educación Continua que satisfacen los requerimientos y necesidades del estudiante y de la industria. La FIME cuenta con una planta aproximada de más de 660 maestros, de los cuales, algunos cuentan con perfil PRODEP, otros pertenecen al SNI (Sistema Nacional de Investigadores), varios de ellos con reconocimientos, premios y certificaciones en diferentes áreas.
+            
+            Para una atención efectiva, nuestra Facultad cuenta con una importante infraestructura consistente en aulas climatizadas, extensos laboratorios, salas de cómputo, oficinas, salas de tutorías, estacionamientos, canchas deportivas, etc. y que le dan al estudiante toda una oportunidad de desarrollo tanto académico, social, cultural y deportivo.
+            
+            Conscientes de la competencia internacional, actualmente la FIME se encuentra certificada bajo la norma ISO 9001:2015, y cuenta con 10 programas de Licenciatura acreditados por CACEI y en Nivel 1 de CIEES, así como 11 programas de Posgrado en el PNPC.
+            
+            El intercambio académico con otras Instituciones educativas internacionales es una actividad de gran importancia y que la FIME viene realizando tanto con sus estudiantes como con sus docentes.</p>
+    </section>
+    <div class="container mt-5">
+        <!-- Carrusel Bootstrap -->
+        <div id="carouselInd" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primera imagen del carrusel -->
+                <div class="carousel-item active">
+                    <img src="Imagenes/Fime.jpeg" class="d-block w-100" alt="Primera Imagen">
+                </div>
+                <!-- Segunda imagen del carrusel -->
+                <div class="carousel-item">
+                    <img src="Imagenes/FimeFachada.png" class="d-block w-100" alt="Segunda Imagen">
+                </div>
+                <!-- Tercera imagen del carrusel -->
+                <div class="carousel-item">
+                    <img src="Imagenes/Deportes.jpeg" class="d-block w-100" alt="Tercera Imagen">
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInd" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInd" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
